@@ -1,0 +1,95 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+  background: #c4c4c4;
+}
+
+.container__inner {
+  padding: 60px 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 500px;
+  margin: 0 auto;
+
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dropdown__list {
+  min-height: 44px;
+  width: 500px;
+  // background-color: #E3E3E3;
+  // border: 1px solid;
+}
+
+.dropdown__selected {
+  width: 503px;
+}
+
+.dropdown-content {
+  height: 44px;
+  width: 500px;
+  background-color: #e3e3e3;
+  border: 1px solid;
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.chosen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #e27beb;
+  border: 1px solid;
+}
+
+.btn-close {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: transparent;
+  position: relative; /* Относительная позиция для позиционирования линий креста */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  position: absolute;
+  width: 140%; /* Ширина линий креста */
+  height: 10%; /* Высота линий креста */
+  background-color: red; /* Цвет линий креста */
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.hide {
+  display: none;
+}
